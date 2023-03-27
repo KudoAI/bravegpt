@@ -33,7 +33,7 @@
 
 <div align="center">
 
-![bravegpt-demo](https://user-images.githubusercontent.com/10906554/227480635-2ab5270e-d3f1-4857-8d6c-c4abd5eb6956.gif)
+[![bravegpt-demo](https://user-images.githubusercontent.com/10906554/227480635-2ab5270e-d3f1-4857-8d6c-c4abd5eb6956.gif)](https://www.youtube.com/watch?v=j0A378wwb-E&list=PL53kJT43HUs2-qFdEz7WfCj1FKQPhk3cK&index=1)
 
 </div>
 
