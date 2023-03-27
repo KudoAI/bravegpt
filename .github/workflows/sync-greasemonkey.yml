@@ -31,12 +31,15 @@ jobs:
       - name: Handle README changes
         run: |
           cd "${{ github.workspace }}/kudoai/bravegpt"
-          readme_changes=$(git diff HEAD^ HEAD --name-only | grep README.md)
-          if [ -z "$readme_changes" ]; then
+          last_commit=$(git log -1 --name-only --pretty=format:%s)
+          echo "Last commit message: $last_commit"
+          modified_files=$(git show --name-only HEAD | tail -n +2)
+          echo "Modified files: $modified_files"
+          if ! echo "$modified_files" | grep -q "README.md"; then
             echo "No changes to README.md, skipping job."
             exit 0
           fi
-          if echo "$readme_changes" | grep -q "greasemonkey/README.md"; then
+          if echo "$modified_files" | grep -q "greasemonkey/README.md"; then
             echo "Copying greasemonkey/README.md"
             cp "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/"
             commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/greasemonkey/README.md\` auto-sync"
@@ -53,7 +56,6 @@ jobs:
           git add "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/README.md"
           git commit -m "$commit_message"
           git push origin HEAD
-
 
 
 
