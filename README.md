@@ -4,14 +4,14 @@
     <img alt="BraveGPT" width=322 height-58 src="https://raw.githubusercontent.com/kudoai/bravegpt/main/media/images/bravegpt-logo-light-mode-730x135.png">
   </picture>
   <a href="https://www.producthunt.com/posts/bravegpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-bravegpt" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=385630&theme=light" alt="BraveGPT - Bring&#0032;the&#0032;magic&#0032;of&#0032;ChatGPT&#0032;to&#0032;Brave&#0032;Search&#0033; | Product Hunt" style="width: 156px; height: 34px; margin:0 0 11px 5px;" width="156" height="34" /></a>
-  <a href="https://twitter.com/intent/tweet?text=This%20add-on%20adds%20%23ChatGPT%20answers%20right%20besides%20Brave%20Search%20results%21&url=https://www.bravegpt.com&hashtags=userscript,javascript,ai"><img alt="Tweet" style="margin:0 0 14px 5px;" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
+  <a href="https://twitter.com/intent/tweet?text=This%20add-on%20adds%20%23ChatGPT%20answers%20right%20besides%20Brave%20Search%20results%21&url=https://www.bravegpt.com&hashtags=greasemonkey,javascript,ai"><img alt="Tweet" style="margin:0 0 14px 5px;" src="https://img.shields.io/twitter/url/http/shields.io.svg?style=social"></a>
   
 </h1>
 
 [![license](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE.md)
 [![support](https://img.shields.io/badge/Support-Chrome/Firefox/Edge/Opera/Brave/Vivaldi/LibreWolf/QQ-989898.svg)](#compatibility)
 
-<h3><b>BraveGPT</b> brings the magic of ChatGPT to search results...</h3>
+<h3><b>BraveGPT</b> brings the magic of ChatGPT to search results.</h3>
 
 <a href="https://greasyfork.org/en/scripts/462440-bravegpt"><img alt="Install this script" src="https://raw.githubusercontent.com/adamlui/userscripts/master/install-button.svg"></a><a href="#installation"><img alt="How to install" title="How to install" src="https://github.com/adamlui/userscripts/raw/master/help-button.svg"></a>
 <br>
@@ -33,7 +33,7 @@
 
 <div align="center">
 
-[![bravegpt-demo](https://user-images.githubusercontent.com/10906554/227480635-2ab5270e-d3f1-4857-8d6c-c4abd5eb6956.gif)](https://www.youtube.com/watch?v=j0A378wwb-E&list=PL53kJT43HUs2-qFdEz7WfCj1FKQPhk3cK&index=1)
+![bravegpt-demo](https://user-images.githubusercontent.com/10906554/227480635-2ab5270e-d3f1-4857-8d6c-c4abd5eb6956.gif)
 
 </div>
 
