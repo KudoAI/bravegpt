@@ -32,7 +32,9 @@ jobs:
         run: |
           cd "${{ github.workspace }}/kudoai/bravegpt"
           last_commit=$(git log -1 --name-only --pretty=format:%s)
+          echo "Last commit message: $last_commit"
           modified_files=$(echo "$last_commit" | tail -n +2)
+          echo "Modified files: $modified_files"
           if ! echo "$modified_files" | grep -q "README.md"; then
             echo "No changes to README.md, skipping job."
             exit 0
@@ -46,7 +48,7 @@ jobs:
             cp "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/"
             commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/README.md\` auto-sync"
           fi
-
+          echo "Commit message: $commit_message"
 
           cd "${{ github.workspace }}/kudoai/bravegpt"
           git config user.name "auto-sync[bot]"
