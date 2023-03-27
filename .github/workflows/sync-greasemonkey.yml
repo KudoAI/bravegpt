@@ -30,7 +30,7 @@ jobs:
 
       - name: Handle README.md change
         run: |
-          if [[ -n $(diff -q "${{ github.workspace }}/kudoai/bravegptREADME.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md") ]]; then
+          if [[ -n $(diff -q "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md") ]]; then
             cp "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/"
             cd "${{ github.workspace }}/kudoai/bravegpt"
             git config user.email "auto-sync[bot]@users.noreply.github.com"
