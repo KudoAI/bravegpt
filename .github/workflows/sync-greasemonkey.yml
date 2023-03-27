@@ -29,28 +29,27 @@ jobs:
           path: adamlui/userscripts
 
       - name: Handle README changes
-        id: check_readme_modification
         run: |
-          root_readme_modified=$(cd "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt" && git log -1 --pretty=format:%ci -- README.md)
-          greasemonkey_readme_modified=$(cd "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt/greasemonkey" && git log -1 --pretty=format:%ci -- README.md)
-          echo "root readme modified time: $root_readme_modified"
-          echo "greasemonkey readme modified time: $greasemonkey_readme_modified"
-          if [ "$root_readme_modified" '>' "$greasemonkey_readme_modified" ]; then
-            cp "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt/README.md" "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt/greasemonkey/"
-            commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/README.md\` auto-sync"
-          elif [ "$greasemonkey_readme_modified" '>' "$root_readme_modified" ]; then
-            cp "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt/greasemonkey/README.md" "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt/"
+          last_commit=$(git log -1 --pretty=format:%s --name-only)
+          if ! echo "$last_commit" | grep -q "README.md"; then
+            echo "No changes to README.md, skipping job."
+            exit 0
+          fi
+          if echo "$last_commit" | grep -q "greasemonkey/README.md"; then
+            cp "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/"
             commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/greasemonkey/README.md\` auto-sync"
+          else
+            cp "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/"
+            commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/README.md\` auto-sync"
           fi
-          if [ "$root_readme_modified" '!=' "$greasemonkey_readme_modified" ]; then
-            echo "commit message: $commit_message"
-            cd "/home/runner/work/bravegpt/bravegpt/kudoai/bravegpt"
-            git config user.name "auto-sync[bot]"
-            git config user.email "auto-sync[bot]@users.noreply.github.com"
-            git add greasemonkey/README.md greasemonkey/*
-            git commit -m "$commit_message"
-            git push origin HEAD
-          fi
+          
+          cd "${{ github.workspace }}/kudoai/bravegpt"
+          git config user.name "auto-sync[bot]"
+          git config user.email "auto-sync[bot]@users.noreply.github.com"
+          git add greasemonkey/README.md greasemonkey/*
+          git commit -m "$commit_message"
+          git push origin HEAD
+
 
       - name: Sync greasemonkey to adamlui/userscripts/chatgpt/bravegpt
         run: rsync -av --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
