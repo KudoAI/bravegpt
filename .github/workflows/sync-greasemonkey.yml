@@ -28,15 +28,23 @@ jobs:
           repository: adamlui/userscripts
           path: adamlui/userscripts
 
-      - name: Handle README.md change
+      - name: Handle README changes
+        id: check_readme_modification
         run: |
-          if [[ -n $(diff -q "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md") ]]; then
+          root_readme_modified=$(stat -c %Y "${{ github.workspace }}/kudoai/bravegpt/README.md")
+          greasemonkey_readme_modified=$(stat -c %Y "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md")
+          if [ $root_readme_modified -gt $greasemonkey_readme_modified ]; then
             cp "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/"
-            cd "${{ github.workspace }}/kudoai/bravegpt"
-            git config user.email "auto-sync[bot]@users.noreply.github.com"
-            git config user.name "auto-sync[bot]"
-            git add kudoai/bravegpt/greasemonkey/README.md
             commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/README.md\` auto-sync"
+          elif [ $greasemonkey_readme_modified -gt $root_readme_modified ]; then
+            cp "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/"
+            commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/greasemonkey/README.md\` auto-sync"
+          fi
+          if [ $root_readme_modified -ne $greasemonkey_readme_modified ]; then
+            cd "${{ github.workspace }}/kudoai/bravegpt"
+            git config user.name "auto-sync[bot]"
+            git config user.email "auto-sync[bot]@users.noreply.github.com"
+            git add greasemonkey/README.md greasemonkey/*
             git commit -m "$commit_message"
             git push origin HEAD
           fi
