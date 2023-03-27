@@ -34,7 +34,7 @@ jobs:
           echo "Current directory: $(pwd)"
           cd "${{ github.workspace }}/kudoai/bravegpt"
           echo "Changed directory to: $(pwd)"
-          if [[ "${{ gxithub.event_path }}" == "README.md" ]]; then
+          if [[ "${{ github.event_path }}" == "README.md" ]]; then
             echo "Copying README.md to greasemonkey/README.md"
             cp "${{ github.event_path }}/README.md" "${{ github.event_path }}/greasemonkey/README.md"
           else
