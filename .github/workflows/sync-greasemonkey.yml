@@ -30,7 +30,7 @@ jobs:
 
       - name: Handle README changes
         run: |
-          cd "${{ github.workspace }}/kudoai/bravegpt" as a first command?
+          cd "${{ github.workspace }}/kudoai/bravegpt"
           modified_files=$(git diff --name-only HEAD~1)
           if ! echo "$modified_files" | grep -q "README.md"; then
             echo "No changes to README.md, skipping job."
