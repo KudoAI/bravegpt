@@ -31,19 +31,24 @@ jobs:
       - name: Handle README.md changes
         if: "github.event_path == 'README.md' || github.event_path == 'greasemonkey/README.md'"
         run: |
+          echo "Current directory: $(pwd)"
           cd "${{ github.workspace }}/kudoai/bravegpt"
-          if [[ "${{ github.event_path }}" == "README.md" ]]; then
-            cp README.md greasemonkey/README.md
-            cd greasemonkey
+          echo "Changed directory to: $(pwd)"
+          if [[ "${{ gxithub.event_path }}" == "README.md" ]]; then
+            echo "Copying README.md to greasemonkey/README.md"
+            cp "${{ github.event_path }}/README.md" "${{ github.event_path }}/greasemonkey/README.md"
           else
-            cp greasemonkey/README.md README.md
-            cd .
+            echo "Copying greasemonkey/README.md to README.md"
+            cp "${{ github.event_path }}/greasemonkey/README.md" "${{ github.event_path }}/README.md"
           fi
-          git add README.md
+          echo "Adding README.md to Git"
+          git add "${{ github.event_path }}/greasemonkey/README.md"
           commit_author="$(git log -1 --pretty=format:'%an')"
+          echo "Committing changes to Git"
           git -c user.name="auto-sync[bot]" -c user.email="auto-sync[bot]@users.noreply.github.com" \
             commit -m "${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/${{ github.event_path }}\` auto-sync" \
             --author="${commit_author}"
+          echo "Pushing changes to Git"
           git push origin HEAD
 
       - name: Sync greasemonkey to adamlui/userscripts/chatgpt/bravegpt
