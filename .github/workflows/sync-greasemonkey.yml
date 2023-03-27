@@ -31,8 +31,8 @@ jobs:
       - name: Handle README changes
         id: check_readme_modification
         run: |
-          root_readme_modified=$(git log -1 --pretty=format:%ct "${{ github.workspace }}/kudoai/bravegpt/README.md")
-          greasemonkey_readme_modified=$(git log -1 --pretty=format:%ct "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md")
+          root_readme_modified=$(cd "${{ github.workspace }}/kudoai/bravegpt" && git log -1 --pretty=format:%ci -- README.md)
+          greasemonkey_readme_modified=$(cd "${{ github.workspace }}/kudoai/bravegpt/greasemonkey" && git log -1 --pretty=format:%ci -- README.md)
           if [ $root_readme_modified -gt $greasemonkey_readme_modified ]; then
             cp "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/"
             commit_message="${{ github.event.head_commit.message }} ← \`kudoai/bravegpt/README.md\` auto-sync"
