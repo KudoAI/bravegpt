@@ -51,7 +51,7 @@
 </picture></a>
 <br /><br />
 
-BraveGPT relies on code from the powerful [chatgpt.js](https://github.com/chatgptjs/chatgpt.js) library Copyright (c) 2023 Adam Lui, 冯不游 & chatgpt.js under the MIT license.
+BraveGPT relies on code from the powerful [chatgpt.js](https://github.com/chatgptjs/chatgpt.js) library (c) 2023 Adam Lui, 冯不游 & chatgpt.js under the MIT license.
 
 </div>
 </h6>
@@ -90,7 +90,7 @@ For even *faster* stream-type responses (like the one in demo), Tampermonkey use
 <br>
 [Discuss](https://github.bravegpt.com/discussions) /
 [Leave a review](https://greasyfork.org/en/scripts/462440-bravegpt/feedback#post-discussion) /
-[More ChatGPT userscripts](https://github.com/adamlui/userscripts/tree/master/chatgpt)
+[More ChatGPT userscripts](https://github.com/adamlui/chatgpt-userscripts)
 
 ## Social links
 
