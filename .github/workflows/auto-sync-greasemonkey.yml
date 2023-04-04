@@ -33,11 +33,24 @@ jobs:
           repository: adamlui/chatgpt-userscripts
           path: adamlui/chatgpt-userscripts
 
+      - name: Copy greasemonkey/README.md to root directory
+        run: cp -f ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md ${{ github.workspace }}/kudoai/bravegpt/README.md
+
       - name: Sync kudoai/bravegpt/greasemonkey to adamlui/userscripts/chatgpt/bravegpt
         run: rsync -av --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
 
       - name: Sync kudoai/bravegpt/greasemonkey to adamlui/chatgpt-userscripts/bravegpt
-        run: rsync -av --delete --exclude="/.*" ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/chatgpt-userscripts/bravegpt/
+        run: rsync -av --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/chatgpt-userscripts/bravegpt/
+
+      - name: Push to kudoai/bravegpt
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          push_options: '--force'
+          add_options: '--all'
+          commit_user_email: auto-sync@kudoai.com
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt/greasemonkey`]'
+          file_pattern: '*'
+          repository: kudoai/bravegpt
 
       - name: Push to adamlui/userscripts
         uses: stefanzweifel/git-auto-commit-action@v4
