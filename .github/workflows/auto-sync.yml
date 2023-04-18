@@ -42,7 +42,7 @@ jobs:
           fi
 
       - name: Sync / to adamlui/chatgpt-addons/bravegpt/
-        run: rsync -avh --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-addons/bravegpt/
+        run: rsync -avh --delete --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-addons/bravegpt/
 
       - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
         run: rsync -avh --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
