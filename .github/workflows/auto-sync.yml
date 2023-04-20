@@ -1,4 +1,4 @@
-name: Sync (/ to adamlui/chatgpt-addons/bravegpt/) && (/greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/)
+name: Sync (/ to adamlui/chatgpt-apps/bravegpt/) && (/greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/)
 
 on:
   push:
@@ -19,12 +19,12 @@ jobs:
           repository: kudoai/bravegpt
           path: kudoai/bravegpt
 
-      - name: Checkout adamlui/chatgpt-addons
+      - name: Checkout adamlui/chatgpt-apps
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: adamlui/chatgpt-addons
-          path: adamlui/chatgpt-addons
+          repository: adamlui/chatgpt-apps
+          path: adamlui/chatgpt-apps
 
       - name: Checkout adamlui/userscripts
         uses: actions/checkout@v2
@@ -41,8 +41,8 @@ jobs:
             cp -f "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/README.md"
           fi
 
-      - name: Sync / to adamlui/chatgpt-addons/bravegpt/
-        run: rsync -avh --delete --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-addons/bravegpt/
+      - name: Sync / to adamlui/chatgpt-apps/bravegpt/
+        run: rsync -avh --delete --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-apps/bravegpt/
 
       - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
         run: rsync -avh --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
@@ -57,7 +57,7 @@ jobs:
           file_pattern: '*'
           repository: kudoai/bravegpt
 
-      - name: Push to adamlui/chatgpt-addons
+      - name: Push to adamlui/chatgpt-apps
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           push_options: '--force'
@@ -65,7 +65,7 @@ jobs:
           commit_user_email: auto-sync@kudoai.com
           commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
           file_pattern: 'bravegpt/*'
-          repository: adamlui/chatgpt-addons
+          repository: adamlui/chatgpt-apps
 
       - name: Push to adamlui/userscripts
         uses: stefanzweifel/git-auto-commit-action@v4
