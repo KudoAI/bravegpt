@@ -116,7 +116,7 @@ For even more epic ChatGPT apps, go here: https://github.com/adamlui/chatgpt-app
 
 Keeps ChatGPT sessions fresh to eliminate network errors + Cloudflare checks.
 <br>[Install](https://greasyfork.org/en/scripts/462422-chatgpt-auto-refresh) / 
-[Readme](https://github.com/adamlui/chatgpt-auto-refresh/tree/main/greasemonkey/README.md) / 
+[Readme](https://github.com/adamlui/chatgpt-auto-refresh/blob/main/greasemonkey/docs/README.md) / 
 [Discuss](https://github.com/adamlui/chatgpt-auto-refresh/discussions)
 
 ### <img src="https://media.duckduckgpt.com/images/ddgpt-icon48.png" width=17> [DuckDuckGPT](https://duckduckgpt.com/greasemonkey) <a href="https://www.producthunt.com/posts/duckduckgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-duckduckgpt" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=379261&theme=light" alt="DuckDuckGPT - Bring&#0032;the&#0032;magic&#0032;of&#0032;ChatGPT&#0032;to&#0032;DuckDuckGo | Product Hunt" style="width: 112px; height: 24px; margin:0 0 -4px 5px;" width="112" height="24" /></a>
@@ -130,7 +130,7 @@ Display ChatGPT answers in DuckDuckGo sidebar.
 
 Adds Widescreen + Full-Window modes to ChatGPT for reduced scrolling.
 <br>[Install](https://greasyfork.org/en/scripts/461473-chatgpt-widescreen-mode) / 
-[Readme](https://github.com/adamlui/chatgpt-widescreen/tree/main/greasemonkey/README.md) / 
+[Readme](https://github.com/adamlui/chatgpt-widescreen/blob/main/greasemonkey/README.md) / 
 [Discuss](https://github.com/adamlui/chatgpt-widescreen/discussions)
 
 #
