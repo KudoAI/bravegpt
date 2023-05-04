@@ -42,10 +42,10 @@ jobs:
           fi
 
       - name: Sync / to adamlui/chatgpt-apps/bravegpt/
-        run: rsync -avh --delete --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-apps/bravegpt/
+        run: rsync -avhr --delete --exclude={'.git','.github'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-apps/bravegpt/
 
       - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
-        run: rsync -avh --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
+        run: rsync -avhr --delete ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
 
       - name: Push to kudoai/bravegpt
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -54,7 +54,7 @@ jobs:
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
           commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
-          file_pattern: '*'
+          file_pattern: '**'
           repository: kudoai/bravegpt
 
       - name: Push to adamlui/chatgpt-apps
@@ -64,7 +64,7 @@ jobs:
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
           commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
-          file_pattern: 'bravegpt/*'
+          file_pattern: 'bravegpt/**'
           repository: adamlui/chatgpt-apps
 
       - name: Push to adamlui/userscripts
@@ -74,5 +74,5 @@ jobs:
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
           commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
-          file_pattern: 'chatgpt/bravegpt/*'
+          file_pattern: 'chatgpt/bravegpt/**'
           repository: adamlui/userscripts
