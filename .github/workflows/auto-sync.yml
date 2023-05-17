@@ -33,13 +33,17 @@ jobs:
           repository: adamlui/userscripts
           path: adamlui/userscripts
 
-      - name: Sync README.md between directories
+      - name: Sync docs between root & /greasemonkey
         run: |
-          if [ "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/README.md")" > "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md")" ]; then
-            cp -f "${{ github.workspace }}/kudoai/bravegpt/README.md" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md"
-          elif [ "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md")" > "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/README.md")" ]; then
-            cp -f "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/README.md" "${{ github.workspace }}/kudoai/bravegpt/README.md"
-          fi
+          shopt -s globstar
+          for file in "${{ github.workspace }}/kudoai/bravegpt/docs/"**/*.md; do
+            relative_path=${file#"${{ github.workspace }}/kudoai/bravegpt/docs/"}
+            if [ "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/docs/$relative_path")" > "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/docs/$relative_path")" ]; then
+              cp -f "${{ github.workspace }}/kudoai/bravegpt/docs/$relative_path" "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/docs/$relative_path"
+            elif [ "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/docs/$relative_path")" > "$(stat -c %y "${{ github.workspace }}/kudoai/bravegpt/docs/$relative_path")" ]; then
+              cp -f "${{ github.workspace }}/kudoai/bravegpt/greasemonkey/docs/$relative_path" "${{ github.workspace }}/kudoai/bravegpt/docs/$relative_path"
+            fi
+          done
 
       - name: Sync / to adamlui/chatgpt-apps/bravegpt/
         run: rsync -avhr --delete --exclude={'.*','package*json'} ${{ github.workspace }}/kudoai/bravegpt/ ${{ github.workspace }}/adamlui/chatgpt-apps/bravegpt/
