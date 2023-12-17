@@ -12,12 +12,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
 
-      - name: Checkout kudoai/bravegpt
+      - name: Checkout KudoAI/bravegpt
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.REPO_SYNC_PAT }}
-          repository: kudoai/bravegpt
-          path: kudoai/bravegpt
+          repository: KudoAI/bravegpt
+          path: KudoAI/bravegpt
           fetch-depth: 2
 
       - name: Checkout adamlui/chatgpt-apps
@@ -37,11 +37,11 @@ jobs:
       - name: Sync docs between root & /greasemonkey
         run: |
           shopt -s globstar
-          cd ${{ github.workspace }}/kudoai/bravegpt
+          cd ${{ github.workspace }}/KudoAI/bravegpt
           for file in docs/**/*.md; do
             relative_path=${file#"docs/"}
-            root_doc="${{ github.workspace }}/kudoai/bravegpt/docs/$relative_path"
-            gm_doc="${{ github.workspace }}/kudoai/bravegpt/greasemonkey/docs/$relative_path"
+            root_doc="${{ github.workspace }}/KudoAI/bravegpt/docs/$relative_path"
+            gm_doc="${{ github.workspace }}/KudoAI/bravegpt/greasemonkey/docs/$relative_path"
             root_modified=$(git log -1 --format="%ct" -- "$root_doc")
             gm_modified=$(git log -1 --format="%ct" -- "$gm_doc")
             if (( root_modified > gm_modified )); then
@@ -54,24 +54,24 @@ jobs:
       - name: Sync / to adamlui/chatgpt-apps/bravegpt/
         run: |
           rsync -avhr --delete --exclude={'.*','package*json'} \
-            ${{ github.workspace }}/kudoai/bravegpt/ \
+            ${{ github.workspace }}/KudoAI/bravegpt/ \
             ${{ github.workspace }}/adamlui/chatgpt-apps/bravegpt/
 
       - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
         run: |
           rsync -avhr --delete \
-            ${{ github.workspace }}/kudoai/bravegpt/greasemonkey/ \
+            ${{ github.workspace }}/KudoAI/bravegpt/greasemonkey/ \
             ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
 
-      - name: Push to kudoai/bravegpt
+      - name: Push to KudoAI/bravegpt
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           push_options: '--force'
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
-          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]'
           file_pattern: '**'
-          repository: kudoai/bravegpt
+          repository: KudoAI/bravegpt
 
       - name: Push to adamlui/chatgpt-apps
         uses: stefanzweifel/git-auto-commit-action@v4
@@ -79,7 +79,7 @@ jobs:
           push_options: '--force'
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
-          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]'
           file_pattern: 'bravegpt/**'
           repository: adamlui/chatgpt-apps
 
@@ -89,6 +89,6 @@ jobs:
           push_options: '--force'
           add_options: '--all'
           commit_user_email: auto-sync@kudoai.com
-          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `kudoai/bravegpt`]'
+          commit_message: '${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]'
           file_pattern: 'chatgpt/bravegpt/**'
           repository: adamlui/userscripts
