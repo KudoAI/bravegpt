@@ -1,6 +1,5 @@
 module.exports = {
-    'extends': ['eslint:recommended'],
-    'ignorePatterns': ['**/*.md'],
+    'extends': ['eslint:recommended', 'plugin:json-schema-validator/recommended'],
     'rules': {
         'indent': 'off', 'no-unexpected-multiline': 'off', // allow whitespace anywhere
         'quotes': ['error', 'single', { 'avoidEscape': true, 'allowTemplateLiterals': true }], // enforce single quotes for string literals
@@ -13,6 +12,5 @@ module.exports = {
     },
     'globals': { 'chatgpt': 'readonly', 'CryptoJS': 'readonly', 'GM_cookie': 'readonly' },
     'parserOptions': { 'ecmaVersion': 2022, 'sourceType': 'script' },
-    'overrides': [{ 'files': ['**/lib*/**.js'], 'parserOptions': { 'sourceType': 'module' }}],
     'env': { 'browser': true, 'node': true, 'es6': true, 'greasemonkey': true }
 };
