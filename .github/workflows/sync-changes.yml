@@ -40,7 +40,7 @@ jobs:
           cd ${{ github.workspace }}/KudoAI/bravegpt
           loc_prefixes=( "root" "gm" )
 
-          # Sync LICENSE.md
+          # Sync LICENSE.md.
           for prefix in "${loc_prefixes[@]}" ; do
             eval "${prefix}_license_content=\$(git show HEAD:\"./\$([[ \$prefix == \"gm\" ]] && echo \"greasemonkey/\" || echo \"\")LICENSE.md\")"
             eval "${prefix}_license_modified=\$(git log -1 --format=\"%ct\" -- \"\$([[ \$prefix == \"gm\" ]] && echo \"greasemonkey/\" || echo \"\")LICENSE.md\")"
