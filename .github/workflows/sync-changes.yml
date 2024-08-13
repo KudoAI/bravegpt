@@ -40,7 +40,7 @@ jobs:
           cd ${{ github.workspace }}/KudoAI/bravegpt
           loc_prefixes=( "root" "gm" )
 
-          # Sync LICENSE.md.
+          # Sync LICENSE.md
           for prefix in "${loc_prefixes[@]}" ; do
             eval "${prefix}_license_content=\$(git show HEAD:\"./\$([[ \$prefix == \"gm\" ]] && echo \"greasemonkey/\" || echo \"\")LICENSE.md\")"
             eval "${prefix}_license_modified=\$(git log -1 --format=\"%ct\" -- \"\$([[ \$prefix == \"gm\" ]] && echo \"greasemonkey/\" || echo \"\")LICENSE.md\")"
@@ -82,32 +82,29 @@ jobs:
             ${{ github.workspace }}/KudoAI/bravegpt/greasemonkey/ \
             ${{ github.workspace }}/adamlui/userscripts/chatgpt/bravegpt/
 
-      - name: Push to KudoAI/bravegpt
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_docs.outputs.sync_src }}`]"
-          file_pattern: "**"
-          repository: KudoAI/bravegpt
+      - name: Push changes to KudoAI/bravegpt
+        run: |
+          cd ${{ github.workspace }}/KudoAI/bravegpt
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `${{ steps.sync_docs.outputs.sync_src }}`]" || true
+          git push
 
-      - name: Push to adamlui/chatgpt-apps
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]"
-          file_pattern: "bravegpt/**"
-          repository: adamlui/chatgpt-apps
+      - name: Push changes to adamlui/chatgpt-apps
+        run: |
+          cd ${{ github.workspace }}/adamlui/chatgpt-apps
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]" || true
+          git push
 
-      - name: Push to adamlui/userscripts
-        uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          push_options: --force
-          add_options: --all
-          commit_user_email: auto-sync@kudoai.com
-          commit_message: "${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]"
-          file_pattern: "chatgpt/bravegpt/**"
-          repository: adamlui/userscripts
+      - name: Push changes to adamlui/userscripts
+        run: |
+          cd ${{ github.workspace }}/adamlui/userscripts
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "${{ github.event.head_commit.message }} ↞ [auto-sync from `KudoAI/bravegpt`]" || true
+          git push
