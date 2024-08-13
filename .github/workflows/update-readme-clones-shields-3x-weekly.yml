@@ -16,6 +16,20 @@ jobs:
           repository: KudoAI/bravegpt
           path: KudoAI/bravegpt
 
+      - name: Checkout adamlui/chatgpt-apps
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/chatgpt-apps
+          path: adamlui/chatgpt-apps
+
+      - name: Checkout adamlui/userscripts
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
+          repository: adamlui/userscripts
+          path: adamlui/userscripts
+
       - name: Fetch/sum clone counts
         id: get-stats
         run: |
@@ -99,4 +113,22 @@ jobs:
           git config --global user.email "auto-sync@kudoai.com"
           git add .
           git commit -n -m "Updated clones shield counters in READMEs" || true
+          git push
+
+      - name: Push changes to adamlui/chatgpt-apps
+        run: |
+          cd ${{ github.workspace }}/adamlui/chatgpt-apps
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from `KudoAI/bravegpt`]" || true
+          git push
+
+      - name: Push changes to adamlui/userscripts
+        run: |
+          cd ${{ github.workspace }}/adamlui/userscripts
+          git config --global user.name "kudo-sync-bot"
+          git config --global user.email "auto-sync@kudoai.com"
+          git add .
+          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from `KudoAI/bravegpt`]" || true
           git push
