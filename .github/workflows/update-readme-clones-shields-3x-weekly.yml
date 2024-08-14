@@ -106,7 +106,7 @@ jobs:
             else echo "Git clones shields already up-to-date" ; fi
           fi
 
-      - name: Push to KudoAI/bravegpt
+      - name: Push changes to KudoAI/bravegpt
         run: |
           cd ${{ github.workspace }}/KudoAI/bravegpt
           git config --global user.name "kudo-sync-bot"
@@ -121,7 +121,7 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git add .
-          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from `KudoAI/bravegpt`]" || true
+          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from \`KudoAI/bravegpt\`]" || true
           git push
 
       - name: Push changes to adamlui/userscripts
@@ -130,5 +130,5 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git add .
-          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from `KudoAI/bravegpt`]" || true
+          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from \`KudoAI/bravegpt\`]" || true
           git push
