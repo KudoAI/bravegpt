@@ -121,7 +121,7 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git add .
-          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from \`KudoAI/bravegpt\`]" || true
+          git commit -n -m "Updated clones shield counters in BraveGPT READMEs" || true
           git push
 
       - name: Push changes to adamlui/userscripts
@@ -130,5 +130,5 @@ jobs:
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
           git add .
-          git commit -n -m "Updated clones shield counters in READMEs ↞ [auto-sync from \`KudoAI/bravegpt\`]" || true
+          git commit -n -m "Updated clones shield counters in BraveGPT READMEs" || true
           git push
