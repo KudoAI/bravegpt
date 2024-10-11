@@ -1,14 +1,16 @@
+<a id="top"></a>
+
 <h1>
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://media.bravegpt.com/images/logos/bravegpt/darkmode/logo730x155.png">
-    <img alt="BraveGPT" width=322 src="https://media.bravegpt.com/images/logos/bravegpt/lightmode/logo730x155.png">
-  </picture>  
+    <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="https://media.bravegpt.com/images/logos/bravegpt/darkmode/logo730x155.png">
+        <img alt="BraveGPT" width=322 src="https://media.bravegpt.com/images/logos/bravegpt/lightmode/logo730x155.png">
+    </picture>
 </h1>
 
 <a href="https://greasyfork.org/scripts/462440-bravegpt"><img height=31 alt="[Greasy Fork]" src="https://img.shields.io/greasyfork/dt/462440?label=Users&logo=weightsandbiases&logoColor=white&labelColor=464646&color=blue&style=for-the-badge"></a>
 <a href="../LICENSE.md"><img height=31 alt="[License: MIT]" src="https://img.shields.io/badge/License-MIT-orange.svg?logo=internetarchive&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://github.com/KudoAI/bravegpt/commits"><img height=31 alt="[GitHub commits]" src="https://img.shields.io/github/commit-activity/m/KudoAI/bravegpt?label=Commits&logo=github&logoColor=white&labelColor=464646&color=7bb7fc&style=for-the-badge"></a>
-<img height=31 src="https://img.shields.io/badge/Clones-648/month-869da0?logo=github&logoColor=white&labelColor=464646&style=for-the-badge">
+<img height=31 src="https://img.shields.io/badge/Clones-930/month-869da0?logo=github&logoColor=white&labelColor=464646&style=for-the-badge">
 <a href="https://www.codefactor.io/repository/github/KudoAI/bravegpt"><img height=31 alt="[CodeFactor grade]" src="https://img.shields.io/codefactor/grade/github/KudoAI/bravegpt?label=Code+Quality&logo=codefactor&logoColor=white&labelColor=464646&color=b5fc7b&style=for-the-badge"></a>
 <a href="https://github.com/KudoAI/chatgpt.js?utm_source=bravegpt&utm_content=github_shield"><img height=31 alt="[Powered by chatgpt.js]" src="https://img.shields.io/badge/Powered_by-chatgpt.js-black?logo=gamejolt&logoColor=white&labelColor=464646&style=for-the-badge"></a>
 <a href="https://sonarcloud.io/component_measures?metric=new_vulnerabilities&id=kudoai_bravegpt"><img height=31 alt="[SonarCloud vulnerabilities]" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fsonarcloud.io%2Fapi%2Fmeasures%2Fcomponent%3Fcomponent%3Dkudoai_bravegpt%26metricKeys%3Dvulnerabilities&query=%24.component.measures.0.value&style=for-the-badge&logo=sonarcloud&logoColor=white&labelColor=464646&label=Vulnerabilities&color=gold"></a>
@@ -244,4 +246,4 @@ For even more epic ChatGPT apps, visit: https://github.com/adamlui/ai-apps
 <img height=6px width="100%" src="https://media.bravegpt.com/images/separators/gradient-aqua.png">
 
 <a href="https://github.com/adamlui/userscripts">**More userscripts**</a> /
-<a href="#----------------">Back to top ↑</a>
+<a href="#top">Back to top ↑</a>
