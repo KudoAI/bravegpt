@@ -1,4 +1,4 @@
-name: Sync (/ to adamlui/ai-apps/bravegpt/) && (/greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/)
+name: Sync ** to adamlui/ai-apps/bravegpt/, then greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
 
 on:
   push:
@@ -36,7 +36,7 @@ jobs:
           repository: adamlui/userscripts
           path: adamlui/userscripts
 
-      - name: Sync docs between root & /greasemonkey
+      - name: Sync docs between root & greasemonkey/
         id: sync_docs
         run: |
           shopt -s globstar
@@ -73,13 +73,13 @@ jobs:
           # Store sync src for commit msg in self-push step
           echo "sync_src=$sync_src" >> $GITHUB_OUTPUT
 
-      - name: Sync / to adamlui/ai-apps/bravegpt/
+      - name: Sync ** to adamlui/ai-apps/bravegpt/
         run: |
           rsync -avhr --delete --exclude={'.*','eslint*','package*json'} \
             ${{ github.workspace }}/KudoAI/bravegpt/ \
             ${{ github.workspace }}/adamlui/ai-apps/bravegpt/
 
-      - name: Sync /greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
+      - name: Sync greasemonkey/ to adamlui/userscripts/chatgpt/bravegpt/
         run: |
           rsync -avhr --delete \
             ${{ github.workspace }}/KudoAI/bravegpt/greasemonkey/ \
@@ -99,7 +99,7 @@ jobs:
           git config --global commit.gpgsign true
           git config --global user.name "kudo-sync-bot"
           git config --global user.email "auto-sync@kudoai.com"
-          git config --global user.signingkey  "${{ secrets.GPG_PRIVATE_ID }}"
+          git config --global user.signingkey "${{ secrets.GPG_PRIVATE_ID }}"
 
       - name: Push changes to KudoAI/bravegpt
         run: |
