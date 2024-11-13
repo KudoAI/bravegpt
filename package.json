@@ -6,7 +6,10 @@
   },
   "homepage": "https://www.bravegpt.com",
   "license": "MIT",
-  "funding": "http://github.com/sponsors/KudoAI",
+  "funding": {
+    "type": "github",
+    "url": "http://github.com/sponsors/KudoAI"
+  },
   "scripts": {
     "build:css": "scss-to-css",
     "lint": "eslint . --cache",
