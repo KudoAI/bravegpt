@@ -16,6 +16,7 @@ export default [
                 ipv4: 'readonly', marked: 'readonly', renderMathInElement: 'readonly'
             }
         },
+        plugins: { regexp },
         rules: {
             ...js.configs.recommended.rules, ...regexp.configs['flat/recommended'].rules,
             'indent': 'off', 'no-unexpected-multiline': 'off', 'key-spacing': 'off', // allow whitespace anywhere
