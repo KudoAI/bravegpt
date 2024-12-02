@@ -148,7 +148,7 @@
 // @description:zu        Yengeza izimpendulo ze-AI ku-Brave Search (inikwa amandla yi-GPT-4o!)
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2024.12.1.6
+// @version               2024.12.1.7
 // @license               MIT
 // @icon                  https://media.bravegpt.com/images/icons/bravegpt/icon48.png?0a9e287
 // @icon64                https://media.bravegpt.com/images/icons/bravegpt/icon64.png?0a9e287
@@ -999,7 +999,7 @@
 
                 // Init buttons
                 let btns = [ function greasyFork(){}, function productHunt(){}, function alternativeTo() {} ]
-                if (options?.sites == 'feedback') btns.splice(1, 0, function github(){})
+                if (options?.sites != 'review') btns.splice(1, 0, function github(){})
 
                 // Create/init modal
                 const feedbackModal = siteAlert(`${app.msgs.alert_choosePlatform}:`, '', btns, '', 456)
