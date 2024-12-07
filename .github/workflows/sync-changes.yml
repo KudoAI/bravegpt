@@ -74,7 +74,7 @@ jobs:
 
       - name: Sync ** to adamlui/ai-apps/bravegpt/
         run: |
-          rsync -avhr --delete --exclude='.*' \
+          rsync -avhr --delete --exclude '.*' \
             ${{ github.workspace }}/KudoAI/bravegpt/ \
             ${{ github.workspace }}/adamlui/ai-apps/bravegpt/
 
