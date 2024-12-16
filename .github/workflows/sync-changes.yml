@@ -3,7 +3,7 @@ name: Sync ** to adamlui/ai-apps/bravegpt/, then greasemonkey/ to adamlui/usersc
 on:
   push:
     branches: [main]
-    paths: ["**", "!.*", "!package*.json", "!eslint.config*"]
+    paths: ["**", "!.*"]
 
 jobs:
   build:
