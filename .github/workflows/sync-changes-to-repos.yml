@@ -20,6 +20,7 @@ jobs:
       - name: Checkout KudoAI/bravegpt
         uses: actions/checkout@v5
         with:
+          token: ${{ secrets.REPO_SYNC_PAT }}
           path: KudoAI/bravegpt
           fetch-depth: 2
 
