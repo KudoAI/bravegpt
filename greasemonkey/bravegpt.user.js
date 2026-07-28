@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.27.5
+// @version               2026.7.27.6
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -264,8 +264,8 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: 'c1337f3', // for cached <app|messages>.json
-            aiweb: '8147764' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
+            app: 'd8ae1f8', // for cached <app|messages>.json
+            aiweb: 'be17b5f' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         }
     }
     app.urls = { resourceHost: `https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@${app.commitHashes.app}` }
