@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Bætir ChatGPT svörum við Brave Search hliðarstiku (keyrð af GPT-4o!)" },
+  "appDesc": { "message": "Bætir AI svörum við Brave Search (knúið af nýjustu LLMs!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API hamur" },
   "menuLabel_preferred": { "message": "Æskilegt" },
   "menuLabel_autoAnswer": { "message": "Sjálfvirkt svar" },

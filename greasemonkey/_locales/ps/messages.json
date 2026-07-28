@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "ChatGPT جوابونه اضافه کول Brave Search په پهړه کې (GPT-4o! لخوا)" },
+  "appDesc": { "message": "د زړور لټون ته د AI ځوابونه اضافه کوي (د وروستي LLMs لخوا ځواکمن شوي!)" },
   "menuLabel_proxyAPImode": { "message": "د پراکسي API حالت" },
   "menuLabel_preferred": { "message": "غوراوي" },
   "menuLabel_autoAnswer": { "message": "اتوماتیک ډول" },

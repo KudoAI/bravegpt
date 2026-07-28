@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Přidá odpovědi ChatGPT na boční panel Brave Search (poháněný GPT-4o!)" },
+  "appDesc": { "message": "Přidává odpovědi AI do Brave Search (poháněné nejnovějšími LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Režim proxy API" },
   "menuLabel_preferred": { "message": "Preference" },
   "menuLabel_autoAnswer": { "message": "Automatická odpověď" },

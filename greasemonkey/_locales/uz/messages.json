@@ -1,5 +1,7 @@
 {
-  "appDesc": { "message": "ChatGPT javoblarini Brave Search yon paneliga qo‘shadi (GPT-4o tomonidan quvvatlanadi!)" },
+  "appDesc": {
+    "message": "Brave Search’ga sun’iy intellekt javoblarini qo‘shadi (eng so‘nggi LLM’lar tomonidan quvvatlanadi!)"
+  },
   "menuLabel_proxyAPImode": { "message": "Proksi API rejimi" },
   "menuLabel_preferred": { "message": "Afzal" },
   "menuLabel_autoAnswer": { "message": "Avtomatik javob" },

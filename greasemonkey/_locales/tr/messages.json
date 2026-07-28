@@ -1,7 +1,5 @@
 {
-  "appDesc": {
-    "message": "ChatGPT cevapları, Brave Search kenar çubuğuna ekler (GPT-4o! tarafından desteklenmektedir)"
-  },
+  "appDesc": { "message": "Cesur Arama'ya yapay zeka yanıtları ekler (en son LLM'ler tarafından desteklenmektedir!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API Modu" },
   "menuLabel_preferred": { "message": "Tercih ettiğiniz SMS Ağ Geçidini seçin" },
   "menuLabel_autoAnswer": { "message": "otomatik yanıt" },

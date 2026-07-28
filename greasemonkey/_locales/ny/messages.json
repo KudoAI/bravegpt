@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Amawonjezera mayankho a ChatGPT ku Brave Search sidebar (yoyendetsedwa ndi GPT-4o!)" },
+  "appDesc": { "message": "Amawonjezera mayankho a AI ku Brave Search (yoyendetsedwa ndi ma LLM atsopano!)" },
   "menuLabel_proxyAPImode": { "message": "Njira ya Proxy API" },
   "menuLabel_preferred": { "message": "Wokondedwa" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

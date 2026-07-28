@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Добавя ChatGPT отговори към страничната лента на Brave Search (захранва се от GPT-4o!)" },
+  "appDesc": { "message": "Добавя отговори с изкуствен интелект към Brave Search (поддържа се от най - новите LLMs!)" },
   "menuLabel_proxyAPImode": { "message": "Режим на прокси API" },
   "menuLabel_preferred": { "message": "Предпочитано" },
   "menuLabel_autoAnswer": { "message": "Auto Answer" },

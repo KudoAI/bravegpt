@@ -1,5 +1,7 @@
 {
-  "appDesc": { "message": "Dodaje odpowiedzi ChatGPT do paska bocznego Brave Search (obsługiwanego przez GPT-4o!)" },
+  "appDesc": {
+    "message": "Dodaje odpowiedzi sztucznej inteligencji do Brave Search (obsługiwanego przez najnowsze LLM!)"
+  },
   "menuLabel_proxyAPImode": { "message": "Tryb proxy API" },
   "menuLabel_preferred": { "message": "Preferowane" },
   "menuLabel_autoAnswer": { "message": "Automatyczna odpowiedź" },

@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Brave Search sidebar-д ChatGPT-ийн хариултыг нэмнэ (GPT-4o!)" },
+  "appDesc": { "message": "Brave Search-д AI-ийн хариултыг нэмнэ (хамгийн сүүлийн үеийн LLMs!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API горим" },
   "menuLabel_preferred": { "message": "Эрхэмлэвэл зохих" },
   "menuLabel_autoAnswer": { "message": "Автоматаар нэмэх" },

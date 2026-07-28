@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Кошуу ChatGPT Brave Издөө капталында жооп (GPT-4o менен иштейт!)" },
+  "appDesc": { "message": "Кайраттуу издөөгө AI жоопторун кошот (акыркы LLMs менен иштейт!)" },
   "menuLabel_proxyAPImode": { "message": "Прокси API режими" },
   "menuLabel_preferred": { "message": "Сүйүктүү" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

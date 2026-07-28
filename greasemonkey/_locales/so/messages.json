@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Ku darso Jawaabaha ChatGPT ee Brave Search sidebar (oo ay ku shaqeyso GPT-4o!)" },
+  "appDesc": { "message": "Ku dar jawaabaha AI ee Brave Search (oo ay ku shaqeeyaan LLMs-kii ugu dambeeyay!)" },
   "menuLabel_proxyAPImode": { "message": "Qaabka API Proxy" },
   "menuLabel_preferred": { "message": "La Doorbiday" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

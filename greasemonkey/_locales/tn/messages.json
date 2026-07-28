@@ -1,5 +1,7 @@
 {
-  "appDesc": { "message": "E tsenya dikarabo tsa ChatGPT go Brave Search sidebar (e tsamaisiwa ke GPT-4o!)" },
+  "appDesc": {
+    "message": "E tsenya dikarabo tsa AI mo Patlisisong ya Bopelokgale (e tsamaisiwa ke di-LLM tsa sesweng!)"
+  },
   "menuLabel_proxyAPImode": { "message": "Proxy API Mode" },
   "menuLabel_preferred": { "message": "Ke e rata thata" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

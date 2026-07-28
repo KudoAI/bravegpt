@@ -1,154 +1,154 @@
 // ==UserScript==
 // @name                  BraveGPT 🤖
-// @description           Add AI answers to Brave Search (powered by GPT-4o!)
-// @description:af        Voeg AI-antwoorde by Brave Search (aangedryf deur GPT-4o!)
-// @description:am        የ Brave Search ውስጥ AI መልቀቅን አድርግ፣ (GPT-4o በመሣሪያዎቹ ውስጥ!)
-// @description:ar        يضيف إجابات AI إلى Brave Search (مدعوم بواسطة GPT-4o!)
-// @description:as        Brave Search-লৈ AI উত্তৰ যোগ দিয়ে (GPT-4o দ্বাৰা পাওৱা হৈছে!)
-// @description:az        Brave Search-ya AI cavablarını əlavə edir (GPT-4o tərəfindən dəstəklənir!)
-// @description:be        Дадае ІА адказы на Brave Search (падтрымліваецца GPT-4o!)
-// @description:bg        Добавя ИИ отговори в Brave Search (поддържан от GPT-4o!)
-// @description:bn        Brave Search-ত AI উত্তর যোগ করে (GPT-4o দ্বারা প্রচালিত!)
-// @description:bs        Dodaje AI odgovore na Brave Search (pokreće GPT-4o!)
-// @description:ca        Afegeix respostes d'IA a Brave Search (impulsat per GPT-4o!)
-// @description:ceb       Nagdugang ug mga tubag AI ngadto sa Brave Search (gipadagan sa GPT-4o!)
-// @description:co        Aggiunge risposte AI a Brave Search (supportate da GPT-4o!)
-// @description:cs        Přidává AI odpovědi do Brave Search (poháněno GPT-4o!)
-// @description:cy        Ychwanegu atebion AI i Brave Search (a yrrir gan GPT-4o!)
-// @description:da        Tilføjer AI-svar til Brave Search (drevet af GPT-4o!)
-// @description:de        Fügt AI-Antworten zu Brave Search hinzu (betrieben von GPT-4o!)
-// @description:el        Προσθέτει απαντήσεις AI στο Brave Search (τροφοδοτούμενο από GPT-4o!)
-// @description:en        Add AI answers to Brave Search (powered by GPT-4o!)
-// @description:eo        Aldonas AI-respondojn al Brave Search (ebligita de GPT-4o!)
-// @description:es        Añade respuestas de IA a Brave Search (impulsado por GPT-4o!)
-// @description:et        Lisab AI-vastused Brave Search'le (juhitud GPT-4o-ga!)
-// @description:eu        Gehitu IA erantzunak Brave Search-n (GPT-4o-k bultzatuta!)
-// @description:fa        پاسخهای هوشمصنوعی به Brave Search اضافه میشود (توسط GPT-4o پشتیبانی میشود!)
-// @description:fi        Lisää tekoälyvastauksia Brave Search:hun (ohjattu GPT-4o:lla!)
-// @description:fil       Nagdaragdag ng mga sagot ng AI sa Brave Search (pinapagana ng GPT-4o!)
-// @description:fo        Bætir AI svar við Brave Search (drifin af GPT-4o!)
-// @description:fr        Ajoute des réponses IA à Brave Search (propulsé par GPT-4o!)
-// @description:fr-CA     Ajoute des réponses IA à Brave Search (propulsé par GPT-4o!)
-// @description:fy        Foeget AI-antwurden ta oan Brave Search (dreaun troch GPT-4o!)
-// @description:ga        Cuirtear freagraí AI le Brave Search (dírítear ag GPT-4o!)
-// @description:gd        Cur freagairtichean AI ris an Brave Search (air a thug seachad le GPT-4o!)
-// @description:gl        Engade respostas de IA a Brave Search (impulsado por GPT-4o!)
-// @description:gu        Brave Search માટે AI જવાબો ઉમેરે છે (GPT-4o દ્વારા પોવરેડ!)
-// @description:ha        Ƙaddara takardun AI zu Brave Search (da aka fi GPT-4o!)
-// @description:haw       Hoʻohui aku i nā hoʻopiʻi AI iā Brave Search (hoʻohui ʻia e GPT-4o!)
-// @description:he        מוסיף תשובות AI ל-Brave Search (מופעל על ידי GPT-4o!)
-// @description:hi        Brave Search में AI उत्तर जोड़ता है (GPT-4o द्वारा संचालित!)
-// @description:hmn       Ntxig AI nruab nruab rau Brave Search (pab cuam GPT-4o!)
-// @description:hr        Dodaje AI odgovore na Brave Search (pokreće GPT-4o!)
-// @description:ht        Ajoute repons AI nan Brave Search (pòte pa GPT-4o!)
-// @description:hu        AI válaszokat ad hozzá a Brave Search-hoz (GPT-4o által hajtva!)
-// @description:hy        Ավելացնում է AI պատասխաններ Brave Search-ում (աջակցված է GPT-4o-ով!)
-// @description:ia        Adde responas AI a Brave Search (propulsate per GPT-4o!)
-// @description:id        Menambahkan jawaban AI ke Brave Search (didukung oleh GPT-4o!)
-// @description:ig        Tinye ihe ndekọ AI n'ụzọ ọgụgụ Brave Search (n'efu na GPT-4o!)
-// @description:ii        Brave Search ᐸᔦᒪᔪᐃᓃᑦ AI ᓇᑕᐅᒪᐃᑦᓯ (GPT-4o ᓂᑕᔪᑦᓯᐏᑦᑕᒥᔭ!)
-// @description:is        Bætir AI svar við Brave Search (keyrir á GPT-4o!)
-// @description:it        Aggiunge risposte AI a Brave Search (alimentato da GPT-4o!)
-// @description:iu        Brave Search ᑲᑎᒪᔪᖅᑐᖅᑐᐃᓐᓇᓂᒃ AI ᑎᑎᕋᖃᕐᓯᒪᓂᖏᓐ (GPT-4o ᑐᑭᒧᑦᑖᑦ!)
-// @description:ja        Brave Search に AI 回答を追加します (GPT-4o で動作！)
-// @description:jv        Nambéhi pirangga AI nganti Brave Search (diduweni déning GPT-4o!)
-// @description:ka        ამატებს AI პასუხებს Brave Search-ს (იმართება GPT-4o!)
-// @description:kk        Brave Search-ға AI жауаптарын қосады (GPT-4o арқылы жұмыс істейді!)
-// @description:kl        Brave Search-mi AI-t Kalaallit Nunaanni iluani (GPT-4o! -nip ilaanni!)
-// @description:km        បន្ថែមចម្លើយ AI ទៅ Brave Search (ដំណើរការដោយ GPT-4o!)
-// @description:kn        Brave Search ಗೆ AI ಉತ್ತರಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ (GPT-4o ನಿಂದ ನಡೆಸಲ್ಪಡುತ್ತಿದೆ!)
-// @description:ko        Brave Search에 AI 답변을 추가합니다(GPT-4o 제공!)
-// @description:ku        Bersivên AI-ê li Brave Search zêde dike (ji hêla GPT-4o ve hatî hêzdar kirin!)
-// @description:ky        Brave Search'го AI жоопторун кошот (GPT-4o тарабынан иштейт!)
-// @description:la        Addit AI responsa Brave Search (powered per GPT-4o!)
-// @description:lb        Füügt AI Äntwerten op Brave Search (ugedriwwen duerch GPT-4o!)
-// @description:lg        Yambula emisomo ey'ensobi ku Brave Search (enkuuma GPT-4o!)
-// @description:ln        Ebakisi biyano ya AI na Brave Search (ezali na nguya ya GPT-4o!)
-// @description:lo        ເພີ່ມຄໍາຕອບ AI ໃຫ້ກັບ Brave Search (ຂັບເຄື່ອນໂດຍ GPT-4o!)
-// @description:lt        Prideda AI atsakymus į „Brave Search“ (maitina GPT-4o!)
-// @description:lv        Pievieno AI atbildes Brave Search (darbina GPT-4o!)
-// @description:mg        Manampy valiny AI amin'ny Brave Search (nampiasain'ny GPT-4o!)
-// @description:mi        Ka taapirihia nga whakautu AI ki a Brave Search (whakamahia e GPT-4o!)
-// @description:mk        Додава одговори со вештачка интелигенција на Brave Search (напојувано од GPT-4o!)
-// @description:ml        Brave Search-യിലേക്ക് AI ഉത്തരങ്ങൾ ചേർക്കുന്നു (GPT-4o നൽകുന്നതാണ്!)
-// @description:mn        Brave Search-д AI хариултуудыг нэмдэг (GPT-4o-оор ажилладаг!)
-// @description:mr        Brave Search ला AI उत्तरे जोडते (GPT-4o द्वारे समर्थित!)
-// @description:ms        Menambahkan jawapan AI pada Brave Search (dikuasakan oleh GPT-4o!)
-// @description:mt        Iżżid it-tweġibiet AI għal Brave Search (mħaddma minn GPT-4o!)
-// @description:my        Brave Search (GPT-4o ဖြင့် စွမ်းဆောင်ထားသည့်) တွင် AI အဖြေများကို ပေါင်းထည့်သည်
-// @description:na        Aeta AI teroma i Brave Search (ira GPT-4o reke akea!)
-// @description:nb        Legger til AI-svar på Brave Search (drevet av GPT-4o!)
-// @description:nd        Iyatholakala amaswelelo e-AI kuBrave Search (kuyatholakala ngokulawula uGPT-4o!)
-// @description:ne        Brave Search मा AI जवाफहरू थप्छ (GPT-4o द्वारा संचालित!)
-// @description:ng        Ondjova mbelelo dha AI moBrave Search (uumbuli nguGPT-4o!)
-// @description:nl        Voegt AI-antwoorden toe aan Brave Search (mogelijk gemaakt door GPT-4o!)
-// @description:nn        Legg til AI-svar på Brave Search (drevet av GPT-4o!)
-// @description:no        Legger til AI-svar til Brave Search (drevet av GPT-4o!)
-// @description:nso       Ya go etela ditshenyegi tsa AI mo Brave Search (e dirwang ke GPT-4o!)
-// @description:ny        Imawonjezera mayankho a AI ku Brave Search (yoyendetsedwa ndi GPT-4o!)
-// @description:oc        Ajusta de respòstas d'IA a Brave Search (amb GPT-4o!)
-// @description:om        Deebii AI Brave Search (GPT-4o'n kan hojjetu!) irratti dabalata.
-// @description:or        Brave Search କୁ AI ଉତ୍ତର ଯୋଗ କରେ (GPT-4o ଦ୍ୱାରା ଚାଳିତ!)
-// @description:pa        Brave Search (GPT-4o ਦੁਆਰਾ ਸੰਚਾਲਿਤ!) ਵਿੱਚ AI ਜਵਾਬ ਸ਼ਾਮਲ ਕਰਦਾ ਹੈ
-// @description:pl        Dodaje odpowiedzi AI do Brave Search (obsługiwane przez GPT-4o!)
-// @description:ps        Brave Search ته د AI ځوابونه اضافه کوي (د GPT-4o لخوا پرمخ وړل کیږي!)
-// @description:pt        Adiciona respostas de IA ao Brave Search (desenvolvido por GPT-4o!)
-// @description:pt-BR     Adiciona respostas de IA ao Brave Search (desenvolvido por GPT-4o!)
-// @description:qu        Brave Search (GPT-4o nisqawan kallpachasqa!) nisqaman AI kutichiykunata yapan.
-// @description:rm        Agiuntescha respostas d'IA a Brave Search (propulsà da GPT-4o!)
-// @description:rn        Abafasha inyandiko z'IA ku Brave Search (yashyizweho na GPT-4o!)
-// @description:ro        Adaugă răspunsuri AI la Brave Search (alimentat de GPT-4o!)
-// @description:ru        Добавляет ответы ИИ в Brave Search (на базе GPT-4o!)
-// @description:rw        Ongeraho ibisubizo bya AI kuri Brave Search (ikoreshwa na GPT-4o!)
-// @description:sa        Brave Search (GPT-4o द्वारा संचालितम्!) इत्यत्र AI उत्तराणि योजयति ।
-// @description:sat       Brave Search ar AI jawab khon ojantok (GPT-4o! sebadha manju)
-// @description:sc        Agiungit rispostas de IA a Brave Search (motorizadu da GPT-4o!)
-// @description:sd        شامل ڪري ٿو AI جوابن کي Brave Search (GPT-4o پاران طاقتور!)
-// @description:se        Lávdegáhtii AI vástid Brave Search (GPT-4o! vuosttas!)
-// @description:sg        Nâ tî-kûzâ mái vêdáara AI mbi Brave Search (ngâ GPT-4o!)
-// @description:si        Brave Search වෙත AI පිළිතුරු එක් කරයි (GPT-4o මගින් බලගන්වයි!)
-// @description:sk        Pridáva odpovede AI do Brave Search (poháňané GPT-4o!)
-// @description:sl        Dodaja odgovore AI v Brave Search (poganja GPT-4o!)
-// @description:sm        Faʻaopoopo tali AI ile Brave Search (faʻamalosia e GPT-4o!)
-// @description:sn        Inowedzera mhinduro dzeAI kuBrave Search (inofambiswa neGPT-4o!)
-// @description:so        Waxay ku dartay jawaabaha AI Brave Search (waxaa ku shaqeeya GPT-4o!)
-// @description:sq        Shton përgjigjet e AI në Brave Search (mundësuar nga GPT-4o!)
-// @description:sr        Додаје АИ одговоре у Brave Search (покреће ГПТ-4о!)
-// @description:ss        Iphendvulela izindlela zezilungiselelo ku-Brave Search (izenzakalo nge-GPT-4o!)
-// @description:st        E kopanetse diqoqo tsa AI ka Brave Search (ka sebelisoa ke GPT-4o!)
-// @description:su        Nambahkeun jawaban AI kana Brave Search (dikuatkeun ku GPT-4o!)
-// @description:sv        Lägger till AI-svar till Brave Search (driven av GPT-4o!)
-// @description:sw        Inaongeza majibu ya AI kwa Brave Search (inaendeshwa na GPT-4o!)
-// @description:ta        Brave Search க்கு AI பதில்களைச் சேர்க்கிறது (GPT-4o மூலம் இயக்கப்படுகிறது!)
-// @description:te        Brave Searchకి AI సమాధానాలను జోడిస్తుంది (GPT-4o ద్వారా ఆధారితం!)
-// @description:tg        Ба Brave Search ҷавобҳои AI илова мекунад (аз ҷониби GPT-4o!)
-// @description:th        เพิ่มคำตอบ AI ให้กับ Brave Search (ขับเคลื่อนโดย GPT-4o!)
-// @description:ti        ናብ Brave Search (ብGPT-4o ዝሰርሕ!) ናይ AI መልስታት ይውስኸሉ።
-// @description:tk        Brave Search-a AI jogaplaryny goşýar (GPT-4o bilen işleýär!)
-// @description:tl        Nagdadagdag ng mga sagot ng AI sa Brave Search (pinapatakbo ng GPT-4o!)
-// @description:tn        O amogela dipotso tsa AI mo Brave Search (e a nang le GPT-4o!)
-// @description:to        Tambisa mabizo a AI ku Brave Search (mukutenga na GPT-4o!)
-// @description:tr        Brave Search'ya yapay zeka yanıtları ekler (GPT-4o tarafından desteklenmektedir!)
-// @description:ts        Ku engetela tinhlamulo ta AI eka Brave Search (leyi fambiwaka hi GPT-4o!)
-// @description:tt        Brave Search'ка AI җаваплары өсти (GPT-4o белән эшләнгән!)
-// @description:tw        Ɔde AI mmuae ka Brave Search (a GPT-4o na ɛma ahoɔden!) ho.
-// @description:ug        Brave Search ۋەبسېتكە AI جاۋابلار قوشۇدۇ (GPT-4o تەكشۈرگۈچى بىلەن!)
-// @description:uk        Додає відповіді штучного інтелекту в Brave Search (на базі GPT-4o!)
-// @description:ur        Brave Search میں AI جوابات شامل کرتا ہے (GPT-4o کے ذریعے تقویت یافتہ!)
-// @description:uz        Brave Search-ga AI javoblarini qo'shadi (GPT-4o tomonidan quvvatlanadi!)
-// @description:vi        Thêm câu trả lời AI vào Brave Search (được cung cấp bởi GPT-4o!)
-// @description:xh        Yongeza iimpendulo ze-AI kwi-Brave Search (ixhaswe yi-GPT-4o!)
-// @description:yi        לייגט אַי ענטפֿערס צו Brave Search (Powered דורך GPT-4o!)
-// @description:yo        Ṣe afikun awọn idahun AI si Brave Search (agbara nipasẹ GPT-4o!)
-// @description:zh        为 Brave Search 添加 AI 答案（由 GPT-4o 提供支持！）
-// @description:zh-CN     为 Brave Search 添加 AI 答案（由 GPT-4o 提供支持！）
-// @description:zh-HK     為 Brave Search 添加 AI 答案（由 GPT-4o 提供支援！）
-// @description:zh-SG     为 Brave Search 添加 AI 答案（由 GPT-4o 提供支持！）
-// @description:zh-TW     為 Brave Search 添加 AI 答案（由 GPT-4o 提供支援！）
-// @description:zu        Yengeza izimpendulo ze-AI ku-Brave Search (inikwa amandla yi-GPT-4o!)
+// @description            Add AI answers to Brave Search (powered by  the latest LLMs!)
+// @description:af         Voeg AI-antwoorde by Brave Search
+// @description:am         የ Brave Search ውስጥ AI መልቀቅን አድርግ፣
+// @description:ar         يضيف إجابات AI إلى Brave Search
+// @description:as         Brave Search-লৈ AI উত্তৰ যোগ দিয়ে
+// @description:az         Brave Search-ya AI cavablarını əlavə edir
+// @description:be         Дадае ІА адказы на Brave Search
+// @description:bg         Добавя ИИ отговори в Brave Search
+// @description:bn         Brave Search-ত AI উত্তর যোগ করে
+// @description:bs         Dodaje AI odgovore na Brave Search
+// @description:ca         Afegeix respostes d'IA a Brave Search
+// @description:ceb        Nagdugang ug mga tubag AI ngadto sa Brave Search
+// @description:co         Aggiunge risposte AI a Brave Search
+// @description:cs         Přidává AI odpovědi do Brave Search
+// @description:cy         Ychwanegu atebion AI i Brave Search
+// @description:da         Tilføjer AI-svar til Brave Search
+// @description:de         Fügt AI-Antworten zu Brave Search hinzu
+// @description:el         Προσθέτει απαντήσεις AI στο Brave Search
+// @description:en         Add AI answers to Brave Search (powered by  the latest LLMs!)
+// @description:eo         Aldonas AI-respondojn al Brave Search
+// @description:es         Añade respuestas de IA a Brave Search
+// @description:et         Lisab AI-vastused Brave Search'le
+// @description:eu         Gehitu IA erantzunak Brave Search-n
+// @description:fa         پاسخهای هوشمصنوعی به Brave Search اضافه میشود
+// @description:fi         Lisää tekoälyvastauksia Brave Search:hun
+// @description:fil        Nagdaragdag ng mga sagot ng AI sa Brave Search
+// @description:fo         Bætir AI svar við Brave Search
+// @description:fr         Ajoute des réponses IA à Brave Search
+// @description:fr-CA      Ajoute des réponses IA à Brave Search
+// @description:fy         Foeget AI-antwurden ta oan Brave Search
+// @description:ga         Cuirtear freagraí AI le Brave Search
+// @description:gd         Cur freagairtichean AI ris an Brave Search
+// @description:gl         Engade respostas de IA a Brave Search
+// @description:gu         Brave Search માટે AI જવાબો ઉમેરે છે
+// @description:ha         Ƙaddara takardun AI zu Brave Search
+// @description:haw        Hoʻohui aku i nā hoʻopiʻi AI iā Brave Search
+// @description:he         מוסיף תשובות AI ל-Brave Search
+// @description:hi         Brave Search में AI उत्तर जोड़ता है
+// @description:hmn        Ntxig AI nruab nruab rau Brave Search
+// @description:hr         Dodaje AI odgovore na Brave Search
+// @description:ht         Ajoute repons AI nan Brave Search
+// @description:hu         AI válaszokat ad hozzá a Brave Search-hoz
+// @description:hy         Ավելացնում է AI պատասխաններ Brave Search-ում
+// @description:ia         Adde responas AI a Brave Search
+// @description:id         Menambahkan jawaban AI ke Brave Search
+// @description:ig         Tinye ihe ndekọ AI n'ụzọ ọgụgụ Brave Search
+// @description:ii         Brave Search ᐸᔦᒪᔪᐃᓃᑦ AI ᓇᑕᐅᒪᐃᑦᓯ
+// @description:is         Bætir AI svar við Brave Search
+// @description:it         Aggiunge risposte AI a Brave Search
+// @description:iu         Brave Search ᑲᑎᒪᔪᖅᑐᖅᑐᐃᓐᓇᓂᒃ AI ᑎᑎᕋᖃᕐᓯᒪᓂᖏᓐ
+// @description:ja         Brave Search に AI 回答を追加します
+// @description:jv         Nambéhi pirangga AI nganti Brave Search
+// @description:ka         ამატებს AI პასუხებს Brave Search-ს
+// @description:kk         Brave Search-ға AI жауаптарын қосады
+// @description:kl         Brave Search-mi AI-t Kalaallit Nunaanni iluani
+// @description:km         បន្ថែមចម្លើយ AI ទៅ Brave Search
+// @description:kn         Brave Search ಗೆ AI ಉತ್ತರಗಳನ್ನು ಸೇರಿಸುತ್ತದೆ
+// @description:ko         Brave Search에 AI 답변을 추가합니다
+// @description:ku         Bersivên AI-ê li Brave Search zêde dike
+// @description:ky         Brave Search'го AI жоопторун кошот
+// @description:la         Addit AI responsa Brave Search
+// @description:lb         Füügt AI Äntwerten op Brave Search
+// @description:lg         Yambula emisomo ey'ensobi ku Brave Search
+// @description:ln         Ebakisi biyano ya AI na Brave Search
+// @description:lo         ເພີ່ມຄໍາຕອບ AI ໃຫ້ກັບ Brave Search
+// @description:lt         Prideda AI atsakymus į „Brave Search“
+// @description:lv         Pievieno AI atbildes Brave Search
+// @description:mg         Manampy valiny AI amin'ny Brave Search
+// @description:mi         Ka taapirihia nga whakautu AI ki a Brave Search
+// @description:mk         Додава одговори со вештачка интелигенција на Brave Search
+// @description:ml         Brave Search-യിലേക്ക് AI ഉത്തരങ്ങൾ ചേർക്കുന്നു
+// @description:mn         Brave Search-д AI хариултуудыг нэмдэг
+// @description:mr         Brave Search ला AI उत्तरे जोडते
+// @description:ms         Menambahkan jawapan AI pada Brave Search
+// @description:mt         Iżżid it-tweġibiet AI għal Brave Search
+// @description:my         Brave Search တွင် AI အဖြေများကို ပေါင်းထည့်သည်
+// @description:na         Aeta AI teroma i Brave Search
+// @description:nb         Legger til AI-svar på Brave Search
+// @description:nd         Iyatholakala amaswelelo e-AI kuBrave Search
+// @description:ne         Brave Search मा AI जवाफहरू थप्छ
+// @description:ng         Ondjova mbelelo dha AI moBrave Search
+// @description:nl         Voegt AI-antwoorden toe aan Brave Search
+// @description:nn         Legg til AI-svar på Brave Search
+// @description:no         Legger til AI-svar til Brave Search
+// @description:nso        Ya go etela ditshenyegi tsa AI mo Brave Search
+// @description:ny         Imawonjezera mayankho a AI ku Brave Search
+// @description:oc         Ajusta de respòstas d'IA a Brave Search
+// @description:om         Deebii AI Brave Search irratti dabalata.
+// @description:or         Brave Search କୁ AI ଉତ୍ତର ଯୋଗ କରେ
+// @description:pa         Brave Search ਵਿੱਚ AI ਜਵਾਬ ਸ਼ਾਮਲ ਕਰਦਾ ਹੈ
+// @description:pl         Dodaje odpowiedzi AI do Brave Search
+// @description:ps         Brave Search ته د AI ځوابونه اضافه کوي
+// @description:pt         Adiciona respostas de IA ao Brave Search
+// @description:pt-BR      Adiciona respostas de IA ao Brave Search
+// @description:qu         Brave Search nisqaman AI kutichiykunata yapan.
+// @description:rm         Agiuntescha respostas d'IA a Brave Search
+// @description:rn         Abafasha inyandiko z'IA ku Brave Search
+// @description:ro         Adaugă răspunsuri AI la Brave Search
+// @description:ru         Добавляет ответы ИИ в Brave Search
+// @description:rw         Ongeraho ibisubizo bya AI kuri Brave Search
+// @description:sa         Brave Search इत्यत्र AI उत्तराणि योजयति ।
+// @description:sat        Brave Search ar AI jawab khon ojantok
+// @description:sc         Agiungit rispostas de IA a Brave Search
+// @description:sd         شامل ڪري ٿو AI جوابن کي Brave Search
+// @description:se         Lávdegáhtii AI vástid Brave Search
+// @description:sg         Nâ tî-kûzâ mái vêdáara AI mbi Brave Search
+// @description:si         Brave Search වෙත AI පිළිතුරු එක් කරයි
+// @description:sk         Pridáva odpovede AI do Brave Search
+// @description:sl         Dodaja odgovore AI v Brave Search
+// @description:sm         Faʻaopoopo tali AI ile Brave Search
+// @description:sn         Inowedzera mhinduro dzeAI kuBrave Search
+// @description:so         Waxay ku dartay jawaabaha AI Brave Search
+// @description:sq         Shton përgjigjet e AI në Brave Search
+// @description:sr         Додаје АИ одговоре у Brave Search
+// @description:ss         Iphendvulela izindlela zezilungiselelo ku-Brave Search
+// @description:st         E kopanetse diqoqo tsa AI ka Brave Search
+// @description:su         Nambahkeun jawaban AI kana Brave Search
+// @description:sv         Lägger till AI-svar till Brave Search
+// @description:sw         Inaongeza majibu ya AI kwa Brave Search
+// @description:ta         Brave Search க்கு AI பதில்களைச் சேர்க்கிறது
+// @description:te         Brave Searchకి AI సమాధానాలను జోడిస్తుంది
+// @description:tg         Ба Brave Search ҷавобҳои AI илова мекунад
+// @description:th         เพิ่มคำตอบ AI ให้กับ Brave Search
+// @description:ti         ናብ Brave Search ናይ AI መልስታት ይውስኸሉ።
+// @description:tk         Brave Search-a AI jogaplaryny goşýar
+// @description:tl         Nagdadagdag ng mga sagot ng AI sa Brave Search
+// @description:tn         O amogela dipotso tsa AI mo Brave Search
+// @description:to         Tambisa mabizo a AI ku Brave Search
+// @description:tr         Brave Search'ya yapay zeka yanıtları ekler
+// @description:ts         Ku engetela tinhlamulo ta AI eka Brave Search
+// @description:tt         Brave Search'ка AI җаваплары өсти
+// @description:tw         Ɔde AI mmuae ka Brave Search ho.
+// @description:ug         Brave Search ۋەبسېتكە AI جاۋابلار قوشۇدۇ
+// @description:uk         Додає відповіді штучного інтелекту в Brave Search
+// @description:ur         Brave Search میں AI جوابات شامل کرتا ہے
+// @description:uz         Brave Search-ga AI javoblarini qo'shadi
+// @description:vi         Thêm câu trả lời AI vào Brave Search
+// @description:xh         Yongeza iimpendulo ze-AI kwi-Brave Search
+// @description:yi         לייגט אַי ענטפֿערס צו Brave Search
+// @description:yo         Ṣe afikun awọn idahun AI si Brave Search
+// @description:zh         为 Brave Search 添加 AI 答案
+// @description:zh-CN      为 Brave Search 添加 AI 答案
+// @description:zh-HK      為 Brave Search 添加 AI 答案
+// @description:zh-SG      为 Brave Search 添加 AI 答案
+// @description:zh-TW      為 Brave Search 添加 AI 答案
+// @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.27.4
+// @version               2026.7.27.5
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png

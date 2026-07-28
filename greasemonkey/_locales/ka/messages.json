@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Დაამატეთ ChatGPT-ის პასუხები Brave Search-ის გვერდით ზოლში (GPT-4o-ის მეშვეობით!)" },
+  "appDesc": { "message": "Ამატებს AI-ს პასუხებს Brave Search-ზე (უახლესი LLM-ების დახმარებით!)" },
   "menuLabel_proxyAPImode": { "message": "Პროქსი API რეჟიმი" },
   "menuLabel_preferred": { "message": "მირჩევნია" },
   "menuLabel_autoAnswer": { "message": "Ავტომატური პასუხი" },

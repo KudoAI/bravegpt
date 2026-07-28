@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "ለጀግንነት ፍለጋ የጎን አሞሌ (በ GPT-4o የተጎላበተ) ChatGPT ምላሾችን ያክሉ" },
+  "appDesc": { "message": "ወደ ደፋር ፍለጋ (የቅርብ ጊዜ LLMs የተጎላበተው) AI ምላሾችን ያክላል!" },
   "menuLabel_proxyAPImode": { "message": "ተኪ ኤፒአይ ሁነታ" },
   "menuLabel_preferred": { "message": "ተመራጭ" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

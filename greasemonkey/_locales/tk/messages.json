@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "ÇatGPT jogaplaryny goş (GPT-4o bilen işleýän!)" },
+  "appDesc": { "message": "AI-niň batyrgaýlyk gözlegine jogaplary goş (häzirki LLM-ler bilen güýçlendirilýär!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API tertibi" },
   "menuLabel_preferred": { "message": "Terbiýe" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

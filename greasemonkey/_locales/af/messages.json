@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Voeg ChatGPT antwoorde op Dapper Soek sidebar (aangedryf deur GPT-4o!)" },
+  "appDesc": { "message": "Voeg AI-antwoorde by Brave Search (aangedryf deur die nuutste LLM's!)" },
   "menuLabel_proxyAPImode": { "message": "Volmag-API-modus" },
   "menuLabel_preferred": { "message": "Voorkeur" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

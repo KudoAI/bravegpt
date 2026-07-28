@@ -1,5 +1,7 @@
 {
-  "appDesc": { "message": "Ավելացնում է ChatGPT պատասխանները Brave Search կողմից աջ կողմանց (GPT-4o! զինվորված)" },
+  "appDesc": {
+    "message": "Ավելացնում է AI - ի պատասխանները «Խիզախ որոնում »- ին (սնուցվում է ամենավերջին LLM - ներով)"
+  },
   "menuLabel_proxyAPImode": { "message": "Proxy API ռեժիմ" },
   "menuLabel_preferred": { "message": "Նախընտրելի" },
   "menuLabel_autoAnswer": { "message": "Ավտոմատ պատասխան" },

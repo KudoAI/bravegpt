@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Добавляет ответы ChatGPT на сайдбар Brave Search (работает на GPT-4o!)" },
+  "appDesc": { "message": "Добавляет ответы ИИ в Brave Search (на базе новейших LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Режим API прокси-сервера" },
   "menuLabel_preferred": { "message": "Предпочтительно" },
   "menuLabel_autoAnswer": { "message": "автоответ" },

@@ -1,7 +1,5 @@
 {
-  "appDesc": {
-    "message": "Ol i save putim ol bekim bilong ChatGPT long Brave Search sidebar (GPT-4o i save mekim wok long en!)"
-  },
+  "appDesc": { "message": "Ol i save putim ol bekim bilong AI long Brave Search (ol i save yusim ol nupela LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API modus" },
   "menuLabel_preferred": { "message": "Mi laikim tumas" },
   "menuLabel_autoAnswer": { "message": "Auto-Answer" },

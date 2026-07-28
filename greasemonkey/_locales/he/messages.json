@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "מוסיף תשובות של ChatGPT לסרגל הצד של Brave Search (מופעל על ידי GPT-4o!)" },
+  "appDesc": { "message": "מוסיף תשובות AI לחיפוש אמיץ (מופעל על ידי LLMs האחרונים!)" },
   "menuLabel_proxyAPImode": { "message": "מצב API של שרת Proxy" },
   "menuLabel_preferred": { "message": "מועדף" },
   "menuLabel_autoAnswer": { "message": "מענה אוטומטי" },

@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Lisab ChatGPT vastused Brave Searchi külgribale (toetab GPT-4o!)" },
+  "appDesc": { "message": "Lisab tehisintellekti vastused julgesse otsingusse (toiteallikaks uusimad LLM-id!)" },
   "menuLabel_proxyAPImode": { "message": "Puhverserveri API-režiim" },
   "menuLabel_preferred": { "message": "Eelistatud" },
   "menuLabel_autoAnswer": { "message": "Automaatvastus" },

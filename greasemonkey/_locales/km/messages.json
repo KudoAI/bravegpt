@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "បន្ថែមចម្លើយ ChatGPT ទៅរបារចំហៀងស្វែងរកក្លាហាន (ដំណើរការដោយ GPT-4o!)" },
+  "appDesc": { "message": "Adds AI answers to Brave Search (powered by the latest LLMs!)" },
   "menuLabel_proxyAPImode": { "message": "ម៉ូដប្រូកស៊ី API" },
   "menuLabel_preferred": { "message": "Size Policy" },
   "menuLabel_autoAnswer": { "message": "ឆ្លើយដោយស្វ័យប្រវត្តិ" },

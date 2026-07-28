@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "ChatGPT འདིས་བཏང་ཡོད་པ་Brave Search ཚེ་རིང་སྒྲིག་སྦེ་ (GPT-4o! ནང་སྤྱོད་འབད་དེ་)" },
+  "appDesc": { "message": "AIགིས་ལན་འདེབས་ཤུགས་ཆེན་པོ་འཚོལ་བར་སྣེ་ལེན་བྱེད ། (གསར་པའི་LLMs ཀྱིས་སྣེ་ལེན་བྱེད །)" },
   "menuLabel_proxyAPImode": { "message": "པརོགསི ཨུ་ཕཱཡི མོདེ" },
   "menuLabel_preferred": { "message": "ཁྱེད་ཀྱི་ཐུགས་བརྩེ་" },
   "menuLabel_autoAnswer": { "message": "རང་འགུལ་ཞིབ་འཇུག" },

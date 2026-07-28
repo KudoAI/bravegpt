@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Ajoute repons ChatGPT nan ankadre rechèch brav (patrone pa GPT-4o!)" },
+  "appDesc": { "message": "Ajoute repons AI nan rechèch brav (patrone pa dènye LLM yo!)" },
   "menuLabel_proxyAPImode": { "message": "Mòd API proxy" },
   "menuLabel_preferred": { "message": "Li pi bon" },
   "menuLabel_autoAnswer": { "message": "Repons Otomatik" },

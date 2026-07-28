@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Lisää ChatGPT-vastaukset Brave Search -sivupalkkiin (powered by GPT-4o!)" },
+  "appDesc": { "message": "Lisää tekoälyvastaukset rohkeaan hakuun (viimeisimpien LLM: ien avulla!)" },
   "menuLabel_proxyAPImode": { "message": "Välityspalvelimen API-tila" },
   "menuLabel_preferred": { "message": "Ensisijainen" },
   "menuLabel_autoAnswer": { "message": "Automaattinen vastaus" },

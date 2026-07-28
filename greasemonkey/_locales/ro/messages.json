@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Adaugă răspunsuri ChatGPT la bara laterală Brave Search (susținută de GPT-4o!)" },
+  "appDesc": { "message": "Adaugă răspunsuri AI la Căutarea curajoasă (bazată pe cele mai recente LLM-uri!)" },
   "menuLabel_proxyAPImode": { "message": "Mod API proxy" },
   "menuLabel_preferred": { "message": "Clasificare pe" },
   "menuLabel_autoAnswer": { "message": "Răspuns automat" },

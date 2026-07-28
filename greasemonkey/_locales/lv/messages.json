@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Pievieno ChatGPT atbildes Brave Search sānjoslai (nodrošina GPT-4o!)" },
+  "appDesc": { "message": "Drosmīgai meklēšanai pievieno AI atbildes (nodrošina jaunākās LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Starpniekservera API režīms" },
   "menuLabel_preferred": { "message": "Ieteicamais" },
   "menuLabel_autoAnswer": { "message": "Automātiska atbilde" },

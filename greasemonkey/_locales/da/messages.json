@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Tilføjer ChatGPT-svar til Brave Search-sidebjælken (drevet af GPT-4o!)" },
+  "appDesc": { "message": "Tilføjer AI-svar til Brave Search (drevet af de nyeste LLM'er!)" },
   "menuLabel_proxyAPImode": { "message": "Proxy API-tilstand" },
   "menuLabel_preferred": { "message": "foretrukken" },
   "menuLabel_autoAnswer": { "message": "Auto-svar" },

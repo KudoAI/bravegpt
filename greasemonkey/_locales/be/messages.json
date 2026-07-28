@@ -1,5 +1,5 @@
 {
-  "appDesc": { "message": "Дадае адказы ChatGPT у адважную бакавую панэль пошуку (працуе на GPT-4o!)" },
+  "appDesc": { "message": "Дадае адказы на штучны інтэлект у адважны пошук (на базе апошніх LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Рэжым API-проксі" },
   "menuLabel_preferred": { "message": "Home phone" },
   "menuLabel_autoAnswer": { "message": "Аўтаматычны адказ" },

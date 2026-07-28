@@ -1,7 +1,5 @@
 {
-  "appDesc": {
-    "message": "Ҷавоби ChatGPT-ро ба панели паҳлӯии ҷасуронаи ҷустуҷӯ илова мекунад (бо GPT-4o идора карда мешавад!)"
-  },
+  "appDesc": { "message": "Magdagdag ng mga tugon sa AI sa Brave Search (nai-powered ng pinakabagong LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Усули API Proxy" },
   "menuLabel_preferred": { "message": "Size Policy" },
   "menuLabel_autoAnswer": { "message": "Ð  Ð ° Ð ¼ Ð ¾ Ð ¸" },

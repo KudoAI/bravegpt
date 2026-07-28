@@ -1,7 +1,5 @@
 {
-  "appDesc": {
-    "message": "Afegeix les respostes de ChatGPT a la barra lateral de Brave Search (amb tecnologia GPT-4o!)"
-  },
+  "appDesc": { "message": "Afegeix respostes d'IA a Brave Search (amb la tecnologia dels últims LLM!)" },
   "menuLabel_proxyAPImode": { "message": "Mode API de servidor intermediari" },
   "menuLabel_preferred": { "message": "Preferència" },
   "menuLabel_autoAnswer": { "message": "Resposta automàtica" },
