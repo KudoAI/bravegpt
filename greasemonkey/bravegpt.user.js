@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.27.8
+// @version               2026.7.27.9
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -265,7 +265,7 @@
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
             app: 'd8ae1f8', // for cached <app|messages>.json
-            aiweb: 'bf3d40d' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
+            aiweb: '9b38088' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         }
     }
     app.urls = { resourceHost: `https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@${app.commitHashes.app}` }
@@ -1316,7 +1316,10 @@
                         && get.reply.api == iniAPI // not already trying diff API from err
                         && get.reply.triedAPIs.length != Object.keys(app.apis).length -1 // untried APIs remain
                     ) api.tryNew({ caller: get.reply, reason: 'timeout' })
-                }, ( app.config.streamingDisabled ? 10 : 7 *( app.config.preferredAPI ? 2 : 1 )) *1000)
+                }, (
+                    ( app.config.streamingDisabled ? 10 : 7 *( app.config.preferredAPI ? 2 : 1 ))
+                   +( iniAPI == 'AIchatOS' ? 5 : 0 ) // extend +5s for slow AIchatOS
+                )*1000)
             }
 
             // Augment query
