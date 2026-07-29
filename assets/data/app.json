@@ -13,6 +13,7 @@
     "contributors": "https://docs.bravegpt.com/#-contributors",
     "discuss": "https://github.com/KudoAI/bravegpt/discussions",
     "donate": { "github": "https://github.com/sponsors/KudoAI" },
+    "download": { "gm": "https://scriptcat.org/scripts/code/7229/bravegpt.user.js" },
     "github": "https://github.com/KudoAI/bravegpt",
     "publisher": "https://kudoai.com",
     "relatedExtensions": "https://github.com/adamlui/ai-web-extensions/#readme",
@@ -24,6 +25,6 @@
       "saashub": "https://www.saashub.com/bravegpt-reviews/new"
     },
     "support": "https://amazongpt.kudoai.com/issues",
-    "update": { "gm": "https://gm.bravegpt.com" }
+    "update": { "gm": "https://scriptcat.org/scripts/code/7229/bravegpt.meta.js" }
   }
 }

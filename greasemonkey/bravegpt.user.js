@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.28.4
+// @version               2026.7.29
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -185,12 +185,12 @@
 // @include               https://auth0.openai.com
 // @connect               api.binjie.fun
 // @connect               api.openai.com
-// @connect               bravegpt.com
 // @connect               cdn.jsdelivr.net
 // @connect               chatai.mixerbox.com
 // @connect               chatgpt.com
 // @connect               fanyi.sogou.com
 // @connect               raw.githubusercontent.com
+// @connect               scriptcat.org
 // @require               https://cdn.jsdelivr.net/npm/@kudoai/chatgpt.js@4.15.6/dist/chatgpt.min.js#sha256-zp2Wy06WHvPDCRWgIE/ZHNT0cLqAGIsgleJjfDEITjw=
 // @require               https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.2.0/crypto-js.min.js#sha256-dppVXeVTurw1ozOPNE3XqhYmDJPOosfbKQcHyQSE58w=
 // @require               https://cdn.jsdelivr.net/npm/json5@2.2.3/dist/index.min.js#sha256-S7ltnVPzgKyAGBlBG4wQhorJqYTehj5WQCrADCKJufE=
@@ -233,8 +233,8 @@
 // @grant                 GM.xmlHttpRequest
 // @antifeature           ads
 // @noframes
-// @downloadURL           https://gm.bravegpt.com
-// @updateURL             https://gm.bravegpt.com
+// @downloadURL           https://scriptcat.org/scripts/code/7229/bravegpt.user.js
+// @updateURL             https://scriptcat.org/scripts/code/7229/bravegpt.user.js
 // @homepageURL           https://www.bravegpt.com
 // @supportURL            https://github.com/KudoAI/bravegpt/issues
 // @contributionURL       https://github.com/sponsors/KudoAI
