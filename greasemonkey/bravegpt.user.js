@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.29
+// @version               2026.7.29.1
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -264,7 +264,7 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: 'd8ae1f8', // for cached <app|messages>.json
+            app: '6b46220', // for cached <app|messages>.json
             aiweb: '9b38088' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         }
     }
@@ -1971,7 +1971,8 @@
                 function productHunt(){},
                 function linkedin(){},
                 function g2(){},
-                function alternativeto(){}
+                function alternativeto(){},
+                function scriptcat(){}
             ]
             if (modals.stack[0] != 'about') btns.push(function github(){})
 
@@ -2002,6 +2003,7 @@
                   : btn.textContent == 'Linkedin' ? app.urls.review.linkedin
                   : btn.textContent == 'Product Hunt' ? app.urls.review.productHunt
                   : btn.textContent == 'Saashub' ? app.urls.review.saashub
+                  : btn.textContent == 'Scriptcat' ? app.urls.review.scriptcat
                   : app.urls.discuss
                 )
             })
