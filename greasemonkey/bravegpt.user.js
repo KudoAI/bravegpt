@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.com
-// @version               2026.7.29.1
+// @version               2026.7.29.2
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -234,7 +234,7 @@
 // @antifeature           ads
 // @noframes
 // @downloadURL           https://scriptcat.org/scripts/code/7229/bravegpt.user.js
-// @updateURL             https://scriptcat.org/scripts/code/7229/bravegpt.user.js
+// @updateURL             https://scriptcat.org/scripts/code/7229/bravegpt.meta.js
 // @homepageURL           https://www.bravegpt.com
 // @supportURL            https://github.com/KudoAI/bravegpt/issues
 // @contributionURL       https://github.com/sponsors/KudoAI
