@@ -856,7 +856,7 @@
             const reAppName = new RegExp(app.name.toLowerCase(), 'i')
             const currentDate = (() => { // in YYYYMMDD format
                 const today = new Date(), year = today.getFullYear(),
-                      month = String(today.getMonth() + 1).padStart(2, '0'),
+                      month = String(today.getMonth() +1).padStart(2, '0'),
                       day = String(today.getDate()).padStart(2, '0')
                 return year + month + day
             })() ; let adSelected = false
@@ -1695,7 +1695,7 @@
                 ) {
                     if (app.config.stickySidebar || app.config.anchored) replyPre.scrollTop = replyPre.scrollHeight
                     scrollBy({
-                        top: app.div.querySelector('footer').getBoundingClientRect().bottom - innerHeight + 13 })
+                        top: app.div.querySelector('footer').getBoundingClientRect().bottom - innerHeight +13 })
                 }
             }
 
