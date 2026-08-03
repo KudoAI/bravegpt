@@ -148,7 +148,7 @@
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.org
-// @version               2026.8.3.2
+// @version               2026.8.3.3
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
@@ -262,8 +262,8 @@
     window.app = {
         version: GM_info.script.version, chatgptjsVer: /chatgpt\.js@([\d.]+)/.exec(GM_info.scriptMetaStr)[1],
         commitHashes: {
-            app: '6b46220', // for cached <app|messages>.json
-            aiweb: '9b38088' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
+            app: '3c4903a', // for cached <app|messages>.json
+            aiweb: 'cd6272e' // for cached ai-chat-apis.json5 + <code-languages|katex-delimiters|sogou-tts-lang-codes>.json
         }
     }
     app.urls = { resourceHost: `https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@${app.commitHashes.app}` }
@@ -1964,6 +1964,7 @@
 
             // Init buttons
             let btns = [
+                function trustpilot(){},
                 function saashub(){},
                 function productHunt(){},
                 function linkedin(){},
@@ -2001,6 +2002,7 @@
                   : btn.textContent == 'Product Hunt' ? app.urls.review.productHunt
                   : btn.textContent == 'Saashub' ? app.urls.review.saashub
                   : btn.textContent == 'Scriptcat' ? app.urls.review.scriptcat
+                  : btn.textContent == 'Trustpilot' ? app.urls.review.trustpilot
                   : app.urls.discuss
                 )
             })
