@@ -2,7 +2,7 @@
   "name": "BraveGPT", "symbol": "🦁", "slug": "bravegpt", "configKeyPrefix": "braveGPT",
   "author": [
     { "name": "Adam Lui", "url": "https://github.com/adamlui" },
-    { "name": "KudoAI", "url": "https://kudoai.com" }
+    { "name": "KudoAI", "url": "https://kudoai.org" }
   ],
   "urls": {
     "aiwebAssets": "https://cdn.jsdelivr.net/gh/adamlui/ai-web-extensions@latest/assets",
@@ -15,7 +15,7 @@
     "donate": { "github": "https://github.com/sponsors/KudoAI" },
     "download": { "gm": "https://scriptcat.org/scripts/code/7229/bravegpt.user.js" },
     "github": "https://github.com/KudoAI/bravegpt",
-    "publisher": "https://kudoai.com",
+    "publisher": "https://kudoai.org",
     "relatedExtensions": "https://github.com/adamlui/ai-web-extensions/#readme",
     "review": {
       "alternativeTo": "https://alternativeto.net/software/bravegpt/about/",
@@ -25,7 +25,7 @@
       "saashub": "https://www.saashub.com/bravegpt-reviews/new",
       "scriptcat": "https://scriptcat.org/script-show-page/7229/comment"
     },
-    "support": "https://amazongpt.kudoai.com/issues",
+    "support": "https://github.com/KudoAI/bravegpt/issues",
     "update": { "gm": "https://scriptcat.org/scripts/code/7229/bravegpt.meta.js" }
   }
 }

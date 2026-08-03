@@ -147,8 +147,8 @@
 // @description:zh-TW      為 Brave Search 添加 AI 答案
 // @description:zu         Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
-// @namespace             https://kudoai.com
-// @version               2026.8.3.1
+// @namespace             https://kudoai.org
+// @version               2026.8.3.2
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
