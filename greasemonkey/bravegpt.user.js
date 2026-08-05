@@ -60,7 +60,7 @@
 // @description:ko        Brave Search에 AI 답변을 추가합니다
 // @description:ku        Bersivên AI-ê li Brave Search zêde dike
 // @description:ky        Brave Search'го AI жоопторун кошот
-// @description:la        ddit AI responsa Brave Search
+// @description:la        Addit AI responsa Brave Search
 // @description:lb        Füügt AI Äntwerten op Brave Search
 // @description:lg        Yambula emisomo ey'ensobi ku Brave Search
 // @description:ln        Ebakisi biyano ya AI na Brave Search
@@ -79,7 +79,7 @@
 // @description:na        Aeta AI teroma i Brave Search
 // @description:nb        Legger til AI-svar på Brave Search
 // @description:nd        Iyatholakala amaswelelo e-AI kuBrave Search
-// @description:ne        rave Search मा AI जवाफहरू थप्छ
+// @description:ne        Brave Search मा AI जवाफहरू थप्छ
 // @description:ng        Ondjova mbelelo dha AI moBrave Search
 // @description:nl        Voegt AI-antwoorden toe aan Brave Search
 // @description:nn        Legg til AI-svar på Brave Search
@@ -106,7 +106,7 @@
 // @description:sd        شامل ڪري ٿو AI جوابن کي Brave Search
 // @description:se        Lávdegáhtii AI vástid Brave Search
 // @description:sg        Nâ tî-kûzâ mái vêdáara AI mbi Brave Search
-// @description:si        rave Search වෙත AI පිළිතුරු එක් කරයි
+// @description:si        Brave Search වෙත AI පිළිතුරු එක් කරයි
 // @description:sk        Pridáva odpovede AI do Brave Search
 // @description:sl        Dodaja odgovore AI v Brave Search
 // @description:sm        Faʻaopoopo tali AI ile Brave Search
@@ -148,7 +148,7 @@
 // @description:zu        Yengeza izimpendulo ze-AI ku-Brave Search
 // @author                KudoAI
 // @namespace             https://kudoai.org
-// @version               2026.8.4.1
+// @version               2026.8.5
 // @license               MIT
 // @icon                  https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon48.png
 // @icon64                https://cdn.jsdelivr.net/gh/KudoAI/bravegpt@2f21b5f/assets/images/icons/app/icon64.png
