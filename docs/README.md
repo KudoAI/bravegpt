@@ -1,3 +1,6 @@
+> [!IMPORTANT]  
+> This project has migrated to **<https://codeberg.org/adamlui/bravegpt>**
+
 <a id="top"></a>
 
 <!-- HEADER LOGO -->
