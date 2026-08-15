@@ -1,5 +1,5 @@
 > [!IMPORTANT]  
-> This project has migrated to **<https://codeberg.org/adamlui/bravegpt>**
+> This project has migrated to **<https://codeberg.org/KudoAI/bravegpt>**
 
 <a id="top"></a>
 
